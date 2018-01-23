@@ -1,0 +1,21 @@
+<head>
+  <title>myDapp</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+  {{> changeName}}
+
+</body>
+
+<template name="hello">
+  <p>Right now the name is: {{counter}} {{TemplateVar.get"counter"}}.</p>
+</template>
+
+
+<template name="changeName">
+  <input type="text">
+        <button class="set">Change name</button>
+</template>
